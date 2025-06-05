@@ -6,6 +6,14 @@ This repository contains MATLAB code for implementing Bayesian variable selectio
 
 Vector Autoregressive models are widely used in macroeconometrics, but they often suffer from overparameterization, especially when the number of variables or lags is large relative to the sample size. This code implements Bayesian variable selection techniques to address this problem by automatically determining which coefficients should be included in the model.
 
+## Theoretical Background
+
+This code uses a simple example to illustrate the methodology from:
+
+1. **Korobilis, D. (2013)**. "VAR forecasting using Bayesian variable selection." *Journal of Applied Econometrics*, 28(2), 204-230.
+
+If you want the original replication code for this paper go to: https://sites.google.com/site/dimitriskorobilis/matlab/variable-selection-for-vars
+
 ## Models Implemented
 
 ### 1. Standard VAR with Variable Selection (`VAR_SELECTION.m`)
@@ -163,14 +171,6 @@ Compare models using:
 - **Log marginal likelihood**: Higher values indicate better fit
 - **Posterior inclusion probabilities**: Identify important relationships
 - **Out-of-sample forecasting**: Ultimate test of model performance
-
-## Theoretical Background
-
-This code implements the methodology from:
-
-1. **Korobilis, D. (2013)**. "VAR forecasting using Bayesian variable selection." *Journal of Applied Econometrics*, 28(2), 204-230.
-
-2. **Primiceri, G. E. (2005)**. "Time varying structural vector autoregressions and monetary policy." *The Review of Economic Studies*, 72(3), 821-852.
 
 ### Gibbs Sampling Algorithm
 
